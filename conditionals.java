@@ -61,20 +61,42 @@ public class conditionals{
         // * Prime Number Check
 
 
-        int count=0;
-        int num = sc.nextInt();
+        // int count=0;
+        // int num = sc.nextInt();
 
-        for(int i=1;i<=num;i++){
-            if(num % i== 0){
-                count++;
+        // for(int i=1;i<=num;i++){
+        //     if(num % i== 0){
+        //         count++;
+        //     }
+        // }
+        // if(count==2){
+        //     System.out.println(num+ " is a prime number.");
+        // }
+        // else{
+        //     System.out.println(num+ " is not a prime number.");
+        // }
+
+        int n = sc.nextInt();
+        
+        if(n==2){
+            System.out.println(n+" is a prime number");
+        }else{
+            boolean isPrime = true;
+            for(int i=2;i<=n-1;i++){
+                if(n%i==0){
+                    isPrime = false;
+                }
             }
+            if(isPrime==true){
+                System.out.println(n+" is a prime number");
+            }else{
+                System.out.println(n+" is not a prime number");
+            }
+
+
         }
-        if(count==2){
-            System.out.println(num+ " is a prime number.");
-        }
-        else{
-            System.out.println(num+ " is not a prime number.");
-        }
+
+
 
 
 
